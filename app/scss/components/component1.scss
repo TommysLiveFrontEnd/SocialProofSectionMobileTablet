@@ -1,0 +1,197 @@
+@use '../util' as *;
+
+// Moblie Tablet Responsive Code
+@include breakpoint-down(small) {
+
+    .container {
+        padding-top: rem(80);
+    }
+
+    .topcontent { 
+        .header {
+            &__title {
+                @include breakpoint-down(xsmall) {
+                 font-size: rem(25);
+               }
+             height: auto;
+             padding: rem(25);
+             font-weight: 600;
+             font-size: rem(30);
+             text-align: center;
+             color: var(--verydarkmagenta);
+            }
+            &__about {
+            @include breakpoint-down(xsmall) {
+                padding: 0;
+                padding-bottom: rem(35);
+            }
+            height: auto;
+            font-size: rem(15);
+            padding-left: rem(10);
+            padding-right: rem(10);
+            color: var(--darkgrayishmagenta);
+            text-align: center;
+        }
+    }
+    .reviews {
+        .review1 {
+            height: rem(80);
+            margin-bottom: rem(30);
+            border-radius: rem(10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--lightgrayishmagenta);
+            &__stars {
+                height: rem(14);
+                width: auto;
+                padding-left: rem(8);
+            }
+            &__about {
+                color: var(--verydarkmagenta);
+                font-size: rem(13);
+                font-weight: 700;
+                padding: rem(15);
+                text-align: center;
+            }
+        }
+        .review2 {
+            height: rem(80);
+            margin-bottom: rem(30);
+            border-radius: rem(10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--lightgrayishmagenta);
+            &__stars {
+                height: rem(14);
+                width: auto;
+                padding-left: rem(8);
+            }
+            &__about {
+                color: var(--verydarkmagenta);
+                font-size: rem(13);
+                font-weight: 700;
+                padding: rem(15);
+                text-align: center;
+            }
+        }
+        .review3 {
+            height: rem(80);
+            margin-bottom: rem(30);
+            border-radius: rem(10);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--lightgrayishmagenta);
+            &__stars {
+                height: rem(14);
+                width: auto;
+                padding-left: rem(8);
+            }
+            &__about {
+                color: var(--verydarkmagenta);
+                font-size: rem(13);
+                font-weight: 700;
+                padding: rem(15);
+                text-align: center;
+            }
+        }
+    }
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 50vh;
+        row-gap: rem(25);
+        align-items: start;
+        .c1 {
+            padding: rem(20);
+            background-color: var(--verydarkmagenta);
+            color: var(--lightgrayishmagenta);
+            border-radius: rem(10);
+            &__profile {
+                display: inline-flex;
+                align-items: center;
+                
+                &__icon {
+                    height: rem(50);
+                    border-radius: rem(50);
+                }
+                &__name {
+                    padding-left: rem(25);
+                    font-weight: bold;
+                    font-size: rem(14);
+                }
+                .span {
+                    color: var(--softpink);
+                    font-weight: normal;
+                }
+            }
+             &__about {
+                 font-size: rem(14);
+                 padding-top: rem(10);
+                 padding-left: rem(10);
+                 padding-right: rem(10);
+            }
+        }
+        .c2 {
+            padding: rem(20);
+            background-color: var(--verydarkmagenta);
+            color: var(--lightgrayishmagenta);
+            border-radius: rem(10);
+            &__profile {
+                display: inline-flex;
+                align-items: center;
+                &__icon {
+                height: rem(50);
+                border-radius: rem(50);
+                }
+                &__name {
+                    padding-left: rem(25);
+                    font-weight: bold;
+                    font-size: rem(14);
+                }
+                .span {
+                color: var(--softpink);
+                font-weight: normal;
+                }
+            }    
+            &__about {
+                font-size: rem(14);
+                padding-top: rem(10);
+                padding-left: rem(10);
+                padding-right: rem(10);          
+            }
+        }
+        .c3 {
+            padding: rem(20);
+            background-color: var(--verydarkmagenta);
+            color: var(--lightgrayishmagenta);
+            border-radius: rem(10);
+            &__profile {
+                display: inline-flex;
+                align-items: center;
+                &__icon {
+                border-radius: rem(50);
+                height: rem(50);
+                }
+                &__name {
+                padding-left: rem(25);
+                font-weight: bold;
+                font-size: rem(14);
+                }
+                .span {
+                color: var(--softpink);
+                font-weight: normal;
+                }
+            }
+            &__about {
+                font-size: rem(14);
+                padding-top: rem(10);
+                padding-left: rem(10);
+                padding-right: rem(10);   
+            }
+        }
+    }
+}
